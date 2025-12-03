@@ -1,3 +1,5 @@
+// solution for day 1, part 1
+
 const std = @import("std");
 
 pub fn main() !void {
