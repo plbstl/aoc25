@@ -7,6 +7,8 @@ pub fn main() !void {
     defer file.close();
 
     var threaded_io: std.Io.Threaded = .init_single_threaded;
+    defer threaded_io.deinit();
+
     var file_buffer: [1024]u8 = undefined;
     var file_reader = file.reader(threaded_io.io(), &file_buffer);
     var string_num_buffer: [64]u8 = undefined;
