@@ -4,5 +4,5 @@
 
 ```bash
 zig run ...
-# e.g. zig run d1.1.zig
+# e.g. zig run day1-1.zig
 ```
